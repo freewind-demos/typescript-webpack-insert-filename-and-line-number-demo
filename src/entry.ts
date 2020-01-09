@@ -1,4 +1,7 @@
 import $ from 'jquery'
-import './index.css';
+import {toUpper} from './utils';
 
-$('#main').text('Hello, webpack!');
+console.log('__FILENAME_LINE__', '> main');
+
+$('#main').text(`Hello, ${toUpper(name)}!`);
+
